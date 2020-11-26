@@ -82,15 +82,14 @@ msgid ""
 msgstr ""
 "您可以创建一个包含有多键索引的 :ref:`复合索引 <index-type-compound>` ，但是在"
 "复合索引中最多只能有一个多键索引。例如，有一个索引 ``{ a: 1, b: 1 }``, 以下的"
-"文档是允许的："
+"文档是不被允许的："
 
 #: ../source/core/index-multikey.txt:64
 msgid ""
 "You cannot create a compound multikey index ``{ a: 1, b: 1 }`` on the "
 "collection since both the ``a`` and ``b`` fields are arrays."
 msgstr ""
-"但是，如下的文档就是不被允许的，而且MongoDB将不会把这样的一个文档存储到集合中"
-"并建立索引 ``{a: 1, b: 1 }`` ："
+"但是，如下的文档就是被允许的"
 
 #: ../source/core/index-multikey.txt:67
 msgid "But consider a collection that contains the following documents:"
